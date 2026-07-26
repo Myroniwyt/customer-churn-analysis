@@ -17,6 +17,7 @@ The objective is to understand which customer groups are more likely to leave an
 - Matplotlib
 - SQLAlchemy
 - Jupyter Notebook
+- Power BI
 
 ## Dataset
 
@@ -38,11 +39,13 @@ Customer Churn Analysis/
 │   ├── raw/
 │   └── processed/
 ├── images/
+│   ├── customer_churn_dashboard.png
 │   └── top_churn_reasons.png
 ├── notebooks/
 │   └── customer_churn_analysis.ipynb
 ├── outputs/
-│   └── customer_churn_analysis.html
+│   ├── customer_churn_analysis.html
+│   └── customer_churn_dashboard.pdf
 ├── sql/
 │   ├── 01_create_database.sql
 │   ├── 02_create_tables.sql
@@ -67,6 +70,7 @@ Customer Churn Analysis/
 5. Joined the tables into a master SQL view containing 7,043 customers and 51 columns.
 6. Performed exploratory analysis using SQL.
 7. Loaded the master view into Python and created visualizations using pandas and Matplotlib.
+8. Built an interactive Power BI dashboard with KPI cards, churn segmentation charts, slicers, and a downloadable PDF report.
 
 ## Key Findings
 
@@ -76,6 +80,14 @@ Customer Churn Analysis/
 - Fiber Optic customers had the highest internet-service churn rate at **40.72%**.
 - Churned customers paid an average monthly charge of **USD 74.44**, compared with **USD 61.27** for customers who did not churn.
 - Competitor-related issues were the largest churn category, accounting for **841 churned customers**.
+
+## Power BI Dashboard
+
+![Customer Churn Analysis Dashboard](images/customer_churn_dashboard.png)
+
+The interactive Power BI dashboard presents the overall churn rate, customer totals, average monthly charges, churn patterns by contract, tenure, and internet type, and the leading reasons for customer churn.
+
+- [Download the Power BI dashboard PDF](outputs/customer_churn_dashboard.pdf)
 
 ## Visualization
 
